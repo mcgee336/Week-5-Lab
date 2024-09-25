@@ -31,11 +31,11 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            Debug.Log("Rotating Left");
+            rb.AddRelativeForce(Vector2.left);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            Debug.Log("Rotating Right");
+            rb.AddRelativeForce(Vector2.right);
         }
     }
 
